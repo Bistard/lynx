@@ -1,0 +1,28 @@
+@import "./pages/login/login.css";
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    overflow: hidden;
+    background-color: white;
+    font-size: 12px;
+    font-family: 'Microsoft Yahei', '微软雅黑', 'Open Sans';
+}
+
+.workbench {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page {
+    position: relative;
+    width: 400px;
+    height: 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+}
