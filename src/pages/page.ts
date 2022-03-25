@@ -10,6 +10,8 @@ export const enum EPages {
     Event = 'event',
     FredRemovePage = 'fred-remove',
     FredAddPage = 'fred-add',
+    Account = 'account',
+    Notification = 'notification',
 }
 
 export abstract class Page {

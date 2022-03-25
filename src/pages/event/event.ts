@@ -30,7 +30,7 @@ export class EventPage extends Page {
         const button1 = new Button();
         button1.render(accountButton);
         button1.onDidClick(() => {
-            // TODO
+            this.accessor.displayPage(EPages.Account);
         });
 
         const notificationButton = document.createElement('div');
@@ -39,7 +39,7 @@ export class EventPage extends Page {
         const button2 = new Button();
         button2.render(notificationButton);
         button2.onDidClick(() => {
-            // TODO
+            this.accessor.displayPage(EPages.Notification);
         });
 
         left.appendChild(accountButton);

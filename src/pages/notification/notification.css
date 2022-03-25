@@ -1,0 +1,29 @@
+
+.notification > .noti-box {
+    background-color: rgb(235, 235, 235);
+    border-radius: 5px;
+    width: 90%;
+    height: auto;
+
+    margin: 0 auto;
+    margin-top: 20px;
+
+    text-align: center;
+}
+
+.notification > .noti-box > .text {
+    color: rgb(44, 44, 44);
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.notification > .back-button {
+    background-color: transparent;
+    color: dodgerblue;
+    
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 100px;
+}
