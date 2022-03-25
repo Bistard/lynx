@@ -1,0 +1,75 @@
+
+.forum > .name {
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-radius: 10px;
+    background-color: dodgerblue;
+
+    user-select: none;
+
+    margin-top: 20px;
+}
+
+.forum > .post-box {
+    
+    width: 80%;
+    height: auto;
+
+    margin: 0 auto;
+    
+    background-color: rgb(235, 235, 235);
+
+    text-align: center;
+    border-radius: 5px;
+
+    padding: 20px;
+    margin-top: 20px;
+
+    cursor: pointer;
+}
+
+.forum > .post-box > .post:hover {
+    opacity: 70%;
+}
+
+.forum > .post-box > .post:active {
+    opacity: 100%;
+}
+
+.forum > .post-box > .post {
+    background-color: dodgerblue;
+    border-radius: 5px;
+    width: 80%;
+    height: auto;
+
+    margin: 0 auto;
+    margin-top: 20px;
+
+    user-select: none;
+    text-align: center;
+}
+
+.forum > .post-box > .post > .text {
+    color: white;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    user-select: none;
+}
+
+.forum > .back-button {
+    background-color: transparent;
+    color: dodgerblue;
+    
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 0px;
+}

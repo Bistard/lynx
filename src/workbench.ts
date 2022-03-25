@@ -1,6 +1,7 @@
 import { AccountPage } from "./pages/account/account";
 import { EventPage } from "./pages/event/event";
-import { ForumPage } from "./pages/forum/forums";
+import { ForumPage } from "./pages/forum/forum";
+import { ForumsPage } from "./pages/forum/forums";
 import { FredRemovePage } from "./pages/fred/fred";
 import { LoginPage1, LoginPage2 } from "./pages/login/login";
 import { MapPage } from "./pages/map/map";
@@ -39,13 +40,14 @@ class Workbench implements IAccessor {
             LoginPage1, 
             LoginPage2,
             EventPage,
-            ForumPage,
+            ForumsPage,
             FredRemovePage,
             AccountPage,
             NotificationPage,
             TimetablePage,
             MapPage,
             WorkshopPage,
+            ForumPage, 
         ];
         ctors.forEach(ctor => new ctor(this));
         this.displayPage(EPages.Login1);

@@ -89,3 +89,10 @@
     font-weight: bold;
 }
 
+/* .forums > .keyboard {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: auto;
+    content: url('../../../img/keyboard.png');
+} */

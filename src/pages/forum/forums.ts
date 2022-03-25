@@ -2,7 +2,7 @@ import { Button } from "src/base/button";
 import { IAccessor } from "src/workbench";
 import { EPages, Page } from "../page";
 
-export class ForumPage extends Page {
+export class ForumsPage extends Page {
 
     constructor(accessor: IAccessor) {
         super(EPages.Forums, accessor);
@@ -30,7 +30,11 @@ export class ForumPage extends Page {
         const searchBtn = new Button();
         searchBtn.render(search);
         searchBtn.onDidClick(() => {
-            // TODO
+            // REVIEW: no nothing for now
+            // const keyboard = document.createElement('img');
+            // keyboard.className = 'keyboard';
+
+            // this.element.appendChild(keyboard);
         });
 
         const btnContainer = document.createElement('div');
@@ -52,7 +56,7 @@ export class ForumPage extends Page {
             const button = new Button();
             button.render(btn);
             button.onDidClick(() => {
-                
+                this.accessor.displayPage(EPages.Forum);
             });
         });
 
@@ -93,7 +97,7 @@ export class ForumPage extends Page {
         const button3 = new Button();
         button3.render(chat);
         button3.onDidClick(() => {
-            // TODO
+            this.accessor.displayPage(EPages.Forum);
         });
 
         bottom.appendChild(events);
