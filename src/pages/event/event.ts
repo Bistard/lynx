@@ -114,7 +114,7 @@ export class EventPage extends Page {
         const event2 = document.createElement('img');
         event2.className = 'event2';
         event2.addEventListener('click', () => {
-            // TODO
+            // do nothing here
         });
 
         middle.appendChild(workshop);

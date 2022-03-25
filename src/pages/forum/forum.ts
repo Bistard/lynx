@@ -16,7 +16,7 @@ export class ForumPage extends Page {
         const nameBtn = new Button();
         nameBtn.render(name);
         nameBtn.onDidClick(() => {
-            this.accessor.displayPage(EPages.Timetable);
+            // do nothing
         });
 
         const box = document.createElement('div');
@@ -27,7 +27,7 @@ export class ForumPage extends Page {
         }
 
         box.addEventListener('click', () => {
-            // TODO
+            this.accessor.displayPage(EPages.Post);
         });
 
         const back = document.createElement('div');

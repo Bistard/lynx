@@ -8,6 +8,7 @@
 @import "./pages/map/map.css";
 @import "./pages/workshop/workshop.css";
 @import "./pages/forum/forum.css";
+@import "./pages/forum/post.css";
 
 body {
     width: 100vw;

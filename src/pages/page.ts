@@ -17,6 +17,7 @@ export const enum EPages {
     Map = 'map',
     Workshop = 'workshop',
     Forum = 'forum',
+    Post = 'post-page',
 }
 
 export abstract class Page {
