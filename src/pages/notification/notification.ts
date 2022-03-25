@@ -9,7 +9,6 @@ export class NotificationPage extends Page {
     }
 
     public create(): void {
-        this.element.classList.add(EPages.Notification);
         
         for (let i = 0; i < 4; i++) {
             this.element.appendChild(this._createBox());

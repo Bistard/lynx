@@ -9,7 +9,6 @@ export class EventPage extends Page {
     }
 
     public create(): void {
-        this.element.classList.add(EPages.Event);
         
         this.element.appendChild(this._createTop());
         this.element.appendChild(this._createMiddle());
@@ -136,16 +135,18 @@ export class EventPage extends Page {
         const button1 = new Button();
         button1.render(events);
         button1.onDidClick(() => {
-            // TODO
+            if (this.accessor.currentPage === EPages.Event) return;
+            this.accessor.displayPage(EPages.Event);
         });
 
         const forum = document.createElement('div');
         forum.className = 'forum-btn button';
-        forum.innerHTML = 'Forum';
+        forum.innerHTML = 'Forums';
         const button2 = new Button();
         button2.render(forum);
         button2.onDidClick(() => {
-            // TODO
+            if (this.accessor.currentPage === EPages.Forums) return;
+            this.accessor.displayPage(EPages.Forums);
         });
 
         const chat = document.createElement('div');

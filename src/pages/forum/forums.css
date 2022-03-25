@@ -1,0 +1,91 @@
+.forums {
+    display: grid;
+    grid-template-rows: 10fr 1fr;
+}
+
+.forums > .top-part > .icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    content: url('../../../img/Logo.jpg');
+}
+
+.forums > .top-part > .forum-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin: 0 auto;
+
+    font-size: 20px;
+    user-select: none;
+    color: black;
+    text-align: center;
+
+    padding-top: 20px;
+}
+
+.forums > .top-part > .search {
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-radius: 10px;
+    background-color: #8d78e8;
+
+    margin-top: 20px;
+}
+
+.forums > .top-part > .btn-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.forums > .top-part > .btn-container > .forum-btn {
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-radius: 10px;
+    background-color: #507be2;
+
+    margin-top: 20px;
+
+    user-select: none;
+    color: white;
+    text-align: center;
+}
+
+.forums > .bottom-part {
+    line-height: 60px;
+    background-color: beige;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.forums > .bottom-part {
+    line-height: 60px;
+    background-color: beige;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.forums > .bottom-part > .button {
+    background-color: transparent;
+    color: black;
+}
+
+.forums > .bottom-part > .forum-btn {
+    color: greenyellow;
+    font-weight: bold;
+}
+

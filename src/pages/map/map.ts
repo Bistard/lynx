@@ -9,7 +9,6 @@ export class MapPage extends Page {
     }
 
     public create(): void {
-        this.element.classList.add(EPages.Map);
         
         const icon = document.createElement('img');
         icon.className = 'icon';

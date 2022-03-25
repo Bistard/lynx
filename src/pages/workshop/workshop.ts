@@ -9,7 +9,6 @@ export class WorkshopPage extends Page {
     }
 
     public create(): void {
-        this.element.classList.add(EPages.Workshop);
         
         const icon = document.createElement('img');
         icon.className = 'icon';

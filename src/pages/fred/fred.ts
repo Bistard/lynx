@@ -9,7 +9,6 @@ export class FredRemovePage extends Page {
     }
 
     public create(): void {
-        this.element.classList.add(EPages.FredRemovePage);
         
         const icon = document.createElement('img');
         icon.className = 'icon';

@@ -8,6 +8,7 @@ export const enum EPages {
     Login1 = 'login1',
     Login2 = 'login2',
     Event = 'event',
+    Forums = 'forums',
     FredRemovePage = 'fred-remove',
     FredAddPage = 'fred-add',
     Account = 'account',
@@ -30,7 +31,7 @@ export abstract class Page {
         this.name = name;
         this.accessor = accessor;
         this.element = document.createElement('div');
-        this.element.className = 'page';
+        this.element.className = `page ${name}`;
         
         PAGE_MANAGER.set(name, this);
         this.create();

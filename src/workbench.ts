@@ -1,5 +1,6 @@
 import { AccountPage } from "./pages/account/account";
 import { EventPage } from "./pages/event/event";
+import { ForumPage } from "./pages/forum/forums";
 import { FredRemovePage } from "./pages/fred/fred";
 import { LoginPage1, LoginPage2 } from "./pages/login/login";
 import { MapPage } from "./pages/map/map";
@@ -10,6 +11,7 @@ import { WorkshopPage } from "./pages/workshop/workshop";
 
 export interface IAccessor {
 
+    currentPage: string;
     pageStack: string[];
     displayPage(name: string, backTrack?: boolean): boolean;
 
@@ -37,6 +39,7 @@ class Workbench implements IAccessor {
             LoginPage1, 
             LoginPage2,
             EventPage,
+            ForumPage,
             FredRemovePage,
             AccountPage,
             NotificationPage,

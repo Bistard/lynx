@@ -9,7 +9,6 @@ export class AccountPage extends Page {
     }
 
     public create(): void {
-        this.element.classList.add(EPages.Account);
         
         const icon = document.createElement('img');
         icon.className = 'icon';

@@ -10,7 +10,6 @@ export class LoginPage1 extends Page {
     }
 
     public create(): void {
-        this.element.classList.add(EPages.Login1);
 
         const loginIcon = document.createElement('img');
         loginIcon.className = 'login-icon';
@@ -41,7 +40,6 @@ export class LoginPage2 extends Page {
     }
 
     public create(): void {
-        this.element.classList.add(EPages.Login2);
 
         const loginIcon = document.createElement('img');
         loginIcon.className = 'login-icon';

@@ -9,7 +9,6 @@ export class TimetablePage extends Page {
     }
 
     public create(): void {
-        this.element.classList.add(EPages.Timetable);
         
         const icon = document.createElement('img');
         icon.className = 'icon';
