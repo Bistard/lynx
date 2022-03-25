@@ -1,4 +1,5 @@
 import { AccountPage } from "./pages/account/account";
+import { ChatPage } from "./pages/chat/chat";
 import { EventPage } from "./pages/event/event";
 import { ForumPage } from "./pages/forum/forum";
 import { ForumsPage } from "./pages/forum/forums";
@@ -50,7 +51,8 @@ class Workbench implements IAccessor {
             WorkshopPage,
             ForumPage,
             PostPage,
-            
+            ChatPage,
+
         ];
         ctors.forEach(ctor => new ctor(this));
         this.displayPage(EPages.Login1);

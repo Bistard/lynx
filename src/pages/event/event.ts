@@ -155,7 +155,8 @@ export class EventPage extends Page {
         const button3 = new Button();
         button3.render(chat);
         button3.onDidClick(() => {
-            // TODO
+            if (this.accessor.currentPage === EPages.Chat) return;
+            this.accessor.displayPage(EPages.Chat);
         });
 
         bottom.appendChild(events);

@@ -2,13 +2,13 @@ import { Button } from "src/base/button";
 import { IAccessor } from "src/workbench";
 import { EPages, Page } from "../page";
 
-export class ForumsPage extends Page {
+export class ChatPage extends Page {
 
     constructor(accessor: IAccessor) {
-        super(EPages.Forums, accessor);
+        super(EPages.Chat, accessor);
     }
 
-    protected create(): void {
+    public create(): void {
         this.element.appendChild(this._createTop());
         this.element.appendChild(this._createBottom());
     }
@@ -17,53 +17,19 @@ export class ForumsPage extends Page {
         const top = document.createElement('div');
         top.className = 'top-part';
 
-        const icon = document.createElement('img');
-        icon.className = 'icon';
+        const box = document.createElement('div');
+        box.className = 'box';
 
-        const text = document.createElement('div');
-        text.className = 'forum-text';
-        text.innerHTML = 'FORUMS';
-
-        const search = document.createElement('div');
-        search.className = 'search button';
-        search.innerHTML = 'Search Forums';
-        const searchBtn = new Button();
-        searchBtn.render(search);
-        searchBtn.onDidClick(() => {
-            // REVIEW: no nothing for now
-            // const keyboard = document.createElement('img');
-            // keyboard.className = 'keyboard';
-
-            // this.element.appendChild(keyboard);
-        });
-
-        const btnContainer = document.createElement('div');
-        btnContainer.className = 'btn-container';
-
-        [
-            'Class Forum',
-            'Friend Forum',
-            'Career Forum',
-            'Course Forum',
-            'Football Forum',
-            'More...',
-        ].forEach(text => {
-            const btn = document.createElement('div');
-            btn.className = 'forum-btn button';
-            btn.innerHTML = text;
-            btnContainer.appendChild(btn);
-
-            const button = new Button();
-            button.render(btn);
-            button.onDidClick(() => {
-                this.accessor.displayPage(EPages.Forum);
+        for (let i = 0; i < 6; i++) {
+            const message = document.createElement('div');
+            message.className = 'message';
+            message.addEventListener('click', () => {
+                this.accessor.displayPage(EPages.FredRemovePage);
             });
-        });
+            box.appendChild(message);
+        }
 
-        top.appendChild(icon);
-        top.appendChild(text);
-        top.appendChild(search);
-        top.appendChild(btnContainer);
+        top.appendChild(box);
         return top;
     }
 
@@ -83,7 +49,7 @@ export class ForumsPage extends Page {
 
         const forum = document.createElement('div');
         forum.className = 'forum-btn button';
-        forum.innerHTML = 'Forum';
+        forum.innerHTML = 'Forums';
         const button2 = new Button();
         button2.render(forum);
         button2.onDidClick(() => {
@@ -108,7 +74,7 @@ export class ForumsPage extends Page {
     }
 
     public dispose(): void {
-        // dothing
+        // empty
     }
 
 }

@@ -9,6 +9,7 @@ export const enum EPages {
     Login2 = 'login2',
     Event = 'event',
     Forums = 'forums',
+    Chat = 'chat',
     FredRemovePage = 'fred-remove',
     FredAddPage = 'fred-add',
     Account = 'account',
