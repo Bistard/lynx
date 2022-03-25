@@ -4,6 +4,7 @@ import { FredRemovePage } from "./pages/fred/fred";
 import { LoginPage1, LoginPage2 } from "./pages/login/login";
 import { NotificationPage } from "./pages/notification/notification";
 import { EPages, PAGE_MANAGER } from "./pages/page";
+import { TimetablePage } from "./pages/timetable/timetable";
 
 export interface IAccessor {
 
@@ -37,6 +38,7 @@ class Workbench implements IAccessor {
             FredRemovePage,
             AccountPage,
             NotificationPage,
+            TimetablePage,
         ];
         ctors.forEach(ctor => new ctor(this));
         this.displayPage(EPages.Login1);

@@ -3,6 +3,7 @@
 @import "./pages/fred/fred.css";
 @import "./pages/account/account.css";
 @import "./pages/notification/notification.css";
+@import "./pages/timetable/timetable.css";
 
 body {
     width: 100vw;

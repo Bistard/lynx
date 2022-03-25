@@ -12,6 +12,7 @@ export const enum EPages {
     FredAddPage = 'fred-add',
     Account = 'account',
     Notification = 'notification',
+    Timetable = 'timetable',
 }
 
 export abstract class Page {

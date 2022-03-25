@@ -71,7 +71,7 @@ export class EventPage extends Page {
         const button4 = new Button();
         button4.render(timetableButton);
         button4.onDidClick(() => {
-            // TODO
+            this.accessor.displayPage(EPages.Timetable);
         });
 
         right.appendChild(mapButton);
