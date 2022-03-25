@@ -62,7 +62,7 @@ export class EventPage extends Page {
         const button3 = new Button();
         button3.render(mapButton);
         button3.onDidClick(() => {
-            // TODO
+            this.accessor.displayPage(EPages.Map);
         });
 
         const timetableButton = document.createElement('div');
@@ -100,7 +100,7 @@ export class EventPage extends Page {
         const event1 = document.createElement('img');
         event1.className = 'event1';
         event1.addEventListener('click', () => {
-            // TODO
+            this.accessor.displayPage(EPages.Workshop);
         });
 
         const tour = document.createElement('div');

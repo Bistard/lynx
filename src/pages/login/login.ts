@@ -20,8 +20,6 @@ export class LoginPage1 extends Page {
         loginButton.innerHTML = 'Log in';
         const button = new Button();
         button.render(loginButton);
-
-        // event register
         button.onDidClick(() => {
             this.accessor.displayPage(EPages.Login2);
         });

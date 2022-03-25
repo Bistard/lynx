@@ -2,20 +2,22 @@ import { AccountPage } from "./pages/account/account";
 import { EventPage } from "./pages/event/event";
 import { FredRemovePage } from "./pages/fred/fred";
 import { LoginPage1, LoginPage2 } from "./pages/login/login";
+import { MapPage } from "./pages/map/map";
 import { NotificationPage } from "./pages/notification/notification";
 import { EPages, PAGE_MANAGER } from "./pages/page";
 import { TimetablePage } from "./pages/timetable/timetable";
+import { WorkshopPage } from "./pages/workshop/workshop";
 
 export interface IAccessor {
 
-    prevPage: string;
-    displayPage(name: string): boolean;
+    pageStack: string[];
+    displayPage(name: string, backTrack?: boolean): boolean;
 
 }
 
 class Workbench implements IAccessor {
     
-    public prevPage: string = 'none';
+    public pageStack: string[] = [];
     public currentPage: string = 'none';
 
     private element: HTMLElement;
@@ -39,12 +41,16 @@ class Workbench implements IAccessor {
             AccountPage,
             NotificationPage,
             TimetablePage,
+            MapPage,
+            WorkshopPage,
         ];
         ctors.forEach(ctor => new ctor(this));
         this.displayPage(EPages.Login1);
     }
 
-    public displayPage(name: string): boolean {
+    public displayPage(name: string, backTrack: boolean = false): boolean {
+        console.log(this.pageStack);
+
         if (name === this.currentPage) {
             return false;
         }
@@ -58,7 +64,9 @@ class Workbench implements IAccessor {
             this.element.removeChild(this.element.firstChild);
         }
         this.element.appendChild(page.element);
-        this.prevPage = this.currentPage;
+        if (backTrack === false || backTrack === undefined) {
+            this.pageStack.push(this.currentPage);
+        }
         this.currentPage = page.name;
         return true;
     }

@@ -13,6 +13,8 @@ export const enum EPages {
     Account = 'account',
     Notification = 'notification',
     Timetable = 'timetable',
+    Map = 'map',
+    Workshop = 'workshop',
 }
 
 export abstract class Page {

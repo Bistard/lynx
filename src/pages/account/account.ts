@@ -32,7 +32,7 @@ export class AccountPage extends Page {
         const button2 = new Button();
         button2.render(back);
         button2.onDidClick(() => {
-            this.accessor.displayPage(this.accessor.prevPage);
+            this.accessor.displayPage(this.accessor.pageStack.pop()!, true);
         });
 
         this.element.appendChild(icon);

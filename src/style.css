@@ -4,6 +4,8 @@
 @import "./pages/account/account.css";
 @import "./pages/notification/notification.css";
 @import "./pages/timetable/timetable.css";
+@import "./pages/map/map.css";
+@import "./pages/workshop/workshop.css";
 
 body {
     width: 100vw;
