@@ -53,3 +53,13 @@
     line-height: 50px;
     margin-top: 35px;
 }
+
+.fred-remove > .back-button {
+    background-color: transparent;
+    color: dodgerblue;
+    
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+}

@@ -40,16 +40,15 @@ export class FredRemovePage extends Page {
         const button2 = new Button();
         button2.render(back);
         button2.onDidClick(() => {
-            // TODO
+            this.accessor.displayPage(this.accessor.prevPage);
         });
         
-        
-
         this.element.appendChild(icon);
         this.element.appendChild(atText);
         this.element.appendChild(protrait);
         this.element.appendChild(intro);
         this.element.appendChild(remove);
+        this.element.appendChild(back);
     }
 
     public dispose(): void {

@@ -5,12 +5,14 @@ import { EPages, PAGE_MANAGER } from "./pages/page";
 
 export interface IAccessor {
 
+    prevPage: string;
     displayPage(name: string): boolean;
 
 }
 
 class Workbench implements IAccessor {
     
+    public prevPage: string = 'none';
     public currentPage: string = 'none';
 
     private element: HTMLElement;
@@ -50,6 +52,7 @@ class Workbench implements IAccessor {
             this.element.removeChild(this.element.firstChild);
         }
         this.element.appendChild(page.element);
+        this.prevPage = this.currentPage;
         this.currentPage = page.name;
         return true;
     }
