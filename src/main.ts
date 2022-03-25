@@ -35,7 +35,7 @@ class Main {
                     devTools: true,
                     preload: Path.join(__dirname, 'preload.js'),
                 },
-                resizable: true,
+                resizable: false,
                 show: false,
                 frame: true
             });
