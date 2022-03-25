@@ -1,0 +1,104 @@
+
+.event {
+    display: grid;
+    grid-template-rows: 2fr 8fr 1fr;
+}
+
+.event > .top-part {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.event > .top-part > .left-part > .account-button {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.event > .top-part > .left-part > .notification-button {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.event > .top-part > .mid-part > .icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    content: url('../../../img/Logo.jpg');
+}
+
+.event > .top-part > .right-part > .map-button {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.event > .top-part > .right-part > .timetable-button {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.event > .middle-part > .workshop {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    
+    border-radius: 0px;
+    background-color: #34c759;
+}
+
+.event > .middle-part > .tour {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    
+    border-radius: 0px;
+    background-color: #34c759;
+}
+
+.event > .middle-part > .event1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    cursor: pointer;
+    content: url('../../../img/Event1.jpg');
+}
+
+.event > .middle-part > .event2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    cursor: pointer;
+    content: url('../../../img/Event2.jpg');
+}
+
+.event > .bottom-part {
+    line-height: 60px;
+    background-color: beige;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.event > .bottom-part > .button {
+    background-color: transparent;
+    color: black;
+}
+
+.event > .bottom-part > .event-btn {
+    color: greenyellow;
+    font-weight: bold;
+}
+

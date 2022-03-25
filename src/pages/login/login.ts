@@ -16,7 +16,7 @@ export class LoginPage1 extends Page {
         loginIcon.className = 'login-icon';
 
         const loginButton = document.createElement('div');
-        loginButton.className = 'login-button';
+        loginButton.className = 'login-button button';
         loginButton.innerHTML = 'Log in';
         const button = new Button();
         button.render(loginButton);
@@ -60,13 +60,12 @@ export class LoginPage2 extends Page {
         inputBox2.placeholder = 'Enter Password';
 
         const loginButton = document.createElement('div');
-        loginButton.className = 'login-button';
+        loginButton.className = 'login-button button';
         loginButton.innerHTML = 'Log in';
         const button = new Button();
         button.render(loginButton);
-
         button.onDidClick(() => {
-            // TODO
+            this.accessor.displayPage(EPages.Event);
         });
         
         this.element.appendChild(loginIcon);

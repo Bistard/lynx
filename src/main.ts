@@ -24,9 +24,9 @@ class Main {
         app.whenReady().then(() => {
 
             this.winMain = new BrowserWindow({
-                width: 400,
+                width: 415,
                 height: 800,
-                minWidth: 400,
+                minWidth: 415,
                 minHeight: 800,
                 webPreferences: {
                     nodeIntegration: true,

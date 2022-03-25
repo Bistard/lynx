@@ -7,6 +7,9 @@ export const PAGE_MANAGER = new Map<string, Page>();
 export const enum EPages {
     Login1 = 'login1',
     Login2 = 'login2',
+    Event = 'event',
+    FredRemovePage = 'fred-remove',
+    FredAddPage = 'fred-add',
 }
 
 export abstract class Page {

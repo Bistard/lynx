@@ -1,3 +1,5 @@
+import { EventPage } from "./pages/event/event";
+import { FredRemovePage } from "./pages/fred/fred";
 import { LoginPage1, LoginPage2 } from "./pages/login/login";
 import { EPages, PAGE_MANAGER } from "./pages/page";
 
@@ -27,6 +29,8 @@ class Workbench implements IAccessor {
         const ctors = [
             LoginPage1, 
             LoginPage2,
+            EventPage,
+            FredRemovePage,
         ];
         ctors.forEach(ctor => new ctor(this));
         this.displayPage(EPages.Login1);

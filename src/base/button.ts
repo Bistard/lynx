@@ -1,16 +1,8 @@
 import { Widget } from "./widget";
-import { Emitter, Register } from "./event";
+import { Emitter } from "./event";
 
 
-
-export interface IButton {
-    // TODO
-    enabled: boolean;
-
-    onDidClick: Register<Event>;
-}
-
-export class Button extends Widget implements IButton {
+export class Button extends Widget {
     
     /* Events */
     protected readonly _onDidClick = this.__register( new Emitter<Event>() );

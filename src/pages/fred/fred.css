@@ -1,0 +1,55 @@
+
+.fred-remove > .icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    content: url('../../../img/Logo.jpg');
+}
+
+.fred-remove > .at-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin: 0 auto;
+
+    font-size: 26px;
+    font-weight: bold;
+    user-select: none;
+    color: black;
+    text-align: center;
+
+    padding-top: 60px;
+}
+
+.fred-remove > .protrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    content: url('../../../img/Portrait1.jpg');
+}
+
+.fred-remove > .intro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin: 0 auto;
+
+    font-size: 14px;
+    user-select: none;
+    color: dodgerblue;
+    text-align: center;
+    word-wrap: normal;
+
+    padding-top: 8px;
+}
+
+.fred-remove > .remove-button {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 35px;
+}
